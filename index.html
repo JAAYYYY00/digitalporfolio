@@ -1,15 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Title</title>
-        <link rel="stylesheet" href="styles.css" />
-        <script src="script.js"></script>
-    </head>
-    <body>
-        <h1 class="title">Hello World</h1>
-        <div id="mainDiv">Hello Div</div>
-        <br />
-        <button onclick="buttonClicked()">Click me</button>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenrix James Arcangel | Digital Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #6a0dad; /* Purple theme from TechTalk */
+            --bg-color: #121212;
+            --surface-color: #1e1e1e;
+            --text-main: #ffffff;
+            --text-muted: #b3b3b3;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--surface-color);
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 3px solid var(--primary-color);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            margin: 40px 0;
+            padding: 20px;
+            background-color: var(--surface-color);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .about-flex {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .about-text {
+            flex: 2;
+        }
+
+        .about-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            border-radius: 8px;
+            border: 2px solid var(--primary-color);
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background-color: #2a2a2a;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            margin: 0 0 10px 0;
+            color: #fff;
+        }
+
+        .contact-info {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .contact-info li {
+            margin-bottom: 10px;
+        }
+
+        .contact-info a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .about-flex {
+                flex-direction: column-reverse;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Jenrix James B. Arcangel</h1>
+        <p>17 | Jose Abad Santos High School</p>
+    </header>
+
+    <div class="container">
+        
+        <section id="about">
+            <h2>Naratibong Pagpapakilala sa Sarili</h2>
+            <div class="about-flex">
+                <div class="about-text">
+                    <p>Isang mapagpalang araw! Ako si Arcangel, isang masigasig na mag-aaral na kasalukuyang nag-aaral sa Jose Abad Santos High School. Sa aking paglalakbay bilang isang estudyante, natutunan kong pahalagahan ang bawat pagkakataon na matuto at lumago.</p>
+                    <p>Ako ay isang taong may malaking interes sa <strong>coding</strong> at <strong>website designing</strong>. Sa labas ng paaralan, madalas akong makikita na hawak ang aking gitara o hindi naman kaya ang rubiks. Ang portfolio na ito ay nagsisilbing salamin ng aking mga pinaghirapan, mga natutunan, at mga pangarap na nais kong makamit sa hinaharap.</p>
+                </div>
+                <div class="about-image">
+                    <img src="received_701813228938183.jpeg" alt="Jenrix James Arcangel">
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>✨ Natatanging Kakayahan at Talento</h2>
+            <div class="grid-container">
+                <div class="card">
+                    <img src="
+Messenger_creation_67D047A0-9BCF-4443-8BB6-551ED2EFA8E7
+.jpeg" alt="Website Designing">
+                    <h3>1. Website Designing</h3>
+                    <p>Creating modern layouts and web pages.</p>
+                </div>
+                <div class="card">
+                    <img src="received_1335954764306884.jpeg" alt="Public Speaking">
+                    <h3>2. Public Speaking</h3>
+                    <p>Confident communicator and presenter.</p>
+                </div>
+                <div class="card">
+                    <img src="Messenger_creation_A7E6BCC3-B718-4A79-A693-B3EE3A79A264.jpeg" alt="Musikero">
+                    <h3>3. Musikero</h3>
+                    <p>Playing the guitar for live events.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="outputs">
+            <h2>Mga Awtput mula sa Iba't Ibang Asignatura</h2>
+            <div class="grid-container">
+                <div class="card">
+                    <img src="Messenger_creation_A17B77E6-6050-4426-8214-87F416378B16.jpeg" alt="Flipping Quiz Flashcard">
+                    <h3>Computer Programming</h3>
+                    <p>Flipping Quiz Flashcard Application</p>
+                </div>
+                <div class="card">
+                    <img src="LACS — E-DREAMBOARD_20260119_083236_0000.jpg" alt="E-Dreamboard">
+                    <h3>Life and Career Skills</h3>
+                    <p>E-Dreamboard Collection</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <ul class="contact-info">
+                <li><strong>Email:</strong> <a href="mailto:Jenrixjames@gmail.com">Jenrixjames@gmail.com</a></li>
+                <li><strong>Numero:</strong> <a href="tel:09666500241">09666500241</a></li>
+            </ul>
+        </section>
+
+    </div>
+
+</body>
 </html>
